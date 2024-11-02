@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPUB.js Page Navigation Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/epubjs@0.3.88/dist/epub.min.js"></script>
+    <style>
+        #viewer {
+            width: 100%;
+            height: 600px;
+        }
+        #nav {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <select id="pageSelect">
+            <option value="">Select a page</option>
+        </select>
+    </div>
+    <div id="viewer"></div>
+
+    <script src="libs/epub.js"></script>
+
+    <script>
+        // Инициализация книги
+        var book = ePub("/3.epub");
+
+        // Создание рендеринга
+        var rendition = book.renderTo("viewer", {
+            width: "100%",
+            height: "100%"
+        });
+
+        // Отображение первой страницы книги
+        rendition.display();
+
+        // Получение элемента select
+        var pageSelect = document.getElementById("pageSelect");
+
+        // Заполнение выпадающего списка страницами
+        book.loaded.spine.then(function(spine) {
+            var totalPages = spine.items.length;
+            for (var i = 0; i < totalPages; i++) {
+                var option = document.createElement("option");
+                option.textContent = "Page " + (i + 1);
+                option.value = i;
+                pageSelect.appendChild(option);
+            }
+        });
+
+        // Обработчик события change для перехода на выбранную страницу
+        pageSelect.addEventListener("change", function() {
+            var pageIndex = pageSelect.value;
+            if (pageIndex) {
+                rendition.display(parseInt(pageIndex));
+            }
+        });
+
+        // Дополнительно можно слушать события для синхронизации или других целей
+        rendition.on("rendered", function(section){
+            console.log("Rendered", section);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ePub</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="libs/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="description" content="books.">
+</head>
+
+<body>
+    <div class="app">
+        <div class="dictionary-wrapper hidden">
+            <div class="dictionary"></div>
+        </div>
+        <div class="sidebar-wrapper out">
+            <div class="sidebar">
+                <div class="tab-list">
+                    <a data-tab="search" class="item">
+                        <i class="icon material-icons-outlined">search</i>
+                    </a>
+                    <a data-tab="settings" class="item">
+                        <i class="icon material-icons-outlined">settings</i>
+                    </a>
+                </div>
+                <div class="tab-container">
+                    <div class="tab" data-tab="toc">
+                        <div class="toc-list"></div>
+                    </div>
+                    <div class="tab search" data-tab="search">
+                        <div class="search-bar">
+                            <input type="text" autocomplete="off" placeholder="Search book..." class="search-box">
+                            <button class="search-button">
+                                <i class="icon material-icons-outlined">search</i>
+                            </button>
+                        </div>
+                        <div class="search-results"></div>
+                    </div>
+                    <div class="tab info" data-tab="info">
+                        <div class="cover-wrapper">
+                            <img src="" alt="" class="cover">
+                        </div>
+                        <div class="title"></div>
+                        <div class="series-info">
+                            <span class="series-name"></span>
+                            <span class="divider"> - </span>
+                            <span class="series-index"></span>
+                        </div>
+                        <div class="author"></div>
+                        <div class="description"></div>
+                    </div>
+                    <div class="tab settings" data-tab="settings">
+                        <div class="setting">
+                            <div class="setting-label">Font Size</div>
+                            <div class="setting-content font-size chips" data-chips="font-size">
+                                <div class="size chip" style="font-size: 8pt" data-value="8pt">8</div>
+                                <div class="size chip" style="font-size: 9pt" data-value="9pt">9</div>
+                                <div class="size chip" style="font-size: 10pt" data-value="10pt">10</div>
+                                <div class="size chip" style="font-size: 11pt" data-value="11pt">11</div>
+                                <div class="size chip" style="font-size: 12pt" data-value="12pt">12</div>
+                                <div class="size chip" style="font-size: 14pt" data-default="true" data-value="14pt">14</div>
+                                <div class="size chip" style="font-size: 16pt" data-value="16pt">16</div>
+                                <div class="size chip" style="font-size: 18pt" data-value="18pt">18</div>
+                            </div>
+                        </div>
+                        <div class="setting">
+                            <div class="setting-label">Navigation</div>
+                            <div class="setting-content">
+                                <select id="page-navigation-dropdown" class="page-navigation-dropdown">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="setting">
+                            <div class="setting-label">Сhapters</div>
+                            <div class="setting-content setting-content1">
+                                <div class="search-result">
+                                    <a href="epubcfi(/6/2[id217]!/4/48,/1:0,/1:3)" class="result-link">(1) Размышляя над тем, каким образом у людей появляется собственное содержание</a>
+                                </div>
+                            </div>
+                            <div class="setting-content setting-content2">
+                                <div class="search-result">
+                                    <a href="epubcfi(/6/2[id217]!/4/54,/1:0,/1:3)" class="result-link">(2) Вообще говоря, здесь автору можно было бы остановиться — как появляется...</a>
+                                </div>
+                            </div>
+                            <div class="setting-content setting-content3">
+                                <div class="search-result">
+                                    <a href="epubcfi(/6/2[id217]!/4/82,/1:0,/1:3)" class="result-link">(3) Читая этот текст, я почувствовал, что с этого момента — когда появилась...</a>
+                                </div>
+                            </div>
+                            <div class="setting-content setting-content4">
+                                <div class="search-result">
+                                    <a href="epubcfi(/6/2[id217]!/4/98,/1:0,/1:3)" class="result-link">(4) Если интерпретировать происходящее в современном нам созидательном залоге</a>
+                                </div>
+                            </div>
+                            <div class="setting-content setting-content5">
+                                <div class="search-result">
+                                    <a href="epubcfi(/6/2[id217]!/4/102/2,/1:0,/1:3)" class="result-link">(5) Но Гермес не прост. Он дает людям нечто, не вмещающееся в сознании старцев, и создает немыслимое событие, повергшее их в смятение и ужас: в</a>
+                                </div>
+                            </div>
+                            <div class="setting-content setting-content6">
+                                <div class="search-result">
+                                    <a href="epubcfi(/6/4[id216]!/4/6,/1:0,/1:3)" class="result-link">(6) Так что же именно вызвало ужас этих старцев? Что поразило их настолько, что всю остальную жизнь они — судя по тексту — мучились этим событием?</a>
+                                </div>
+                            </div>
+                            <div class="setting-content setting-content7">
+                                <div class="search-result">
+                                    <a href="epubcfi(/6/4[id216]!/4/10,/1:0,/1:3)" class="result-link">(7) В этом смысле произошло переворачивание схемы двойного видения, которую...</a>
+                                </div>
+                            </div>
+                            <div class="setting-content setting-content8">
+                                <div class="search-result">
+                                    <a href="epubcfi(/6/4[id216]!/4/14,/1:0,/1:3)" class="result-link">(8) Главная операция ума в этом случае — то, что можно назвать по-гречески ...</a>
+                                </div>
+                            </div>
+                            <div class="setting-content setting-content9">
+                                <div class="search-result">
+                                    <a href="epubcfi(/6/4[id216]!/4/22,/1:0,/1:3)" class="result-link">(9) Итак, если нам удается</a>
+                                </div>
+                            </div>
+                            <div class="setting-content setting-content10">
+                                <div class="search-result">
+                                    <a href="epubcfi(/6/4[id216]!/4/28,/1:0,/1:4)" class="result-link">(10) Вот что означает такая интерпретация текста. Теперь можно нарисовать схему обустройства</a>
+                                </div>
+                            </div>
+                            <div class="setting-content setting-content11">
+                                <div class="search-result">
+                                    <a href="epubcfi(/6/4[id216]!/4/36,/1:0,/1:4)" class="result-link">(11) Схема обустройства, как мы думаем сейчас, зашита в человека как врожденная схема</a>
+                                </div>
+                            </div>
+                            <div class="setting-content setting-content12">
+                                <div class="search-result">
+                                    <a href="epubcfi(/6/4[id216]!/4/48,/1:0,/1:4)" class="result-link">(12) Если предположить, что эта интерпретация осмысленна, и посмотреть на т...</a>
+                                </div>
+                            </div>
+                            <div class="setting-content setting-content13">
+                                <div class="search-result">
+                                    <a href="epubcfi(/6/4[id216]!/4/48,/1:0,/1:4)" class="result-link">(12) Если предположить, что эта интерпретация осмысленна, и посмотреть на т...</a>
+                                </div>
+                            </div>
+                            <div class="setting-content setting-content14">
+                                <div class="search-result">
+                                    <a href="epubcfi(/6/4[id216]!/4/48,/1:0,/1:4)" class="result-link">(12) Если предположить, что эта интерпретация осмысленна, и посмотреть на т...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="error hidden">
+            <div class="error-title"></div>
+            <div class="error-description"></div>
+            <div class="error-info"></div>
+            <div class="error-dump"></div>
+        </div>
+        <div class="bar">
+            <div class="left">
+                
+            </div>
+            <div class="title">
+                <span class="book-title"></span>
+                <span class="divider"></span>
+                <span class="book-author"></span>
+            </div>
+            <div class="right">
+                <button class="sidebar-button hidden" onclick="ePubViewer.doSidebar()">
+                    <i class="icon material-icons-outlined">menu</i>
+                </button>
+            </div>
+        </div>
+        <div class="book">
+            <div class="empty-wrapper">
+                <div class="empty">
+                </div>
+            </div>
+        </div>
+        <div class="bar">
+            <div class="left">
+                <button class="prev hidden">
+                    <i class="icon material-icons-outlined">chevron_left</i>
+                </button>
+            </div>
+            <div class="loc"></div>
+            <div class="right">
+                <button class="next hidden">
+                    <i class="icon material-icons-outlined">chevron_right</i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://geek1011.net/epubviewer-inject.js"></script>
+
+    <script>
+        function isIE(userAgent) {
+            userAgent = userAgent || navigator.userAgent;
+            return userAgent.indexOf("MSIE ") > -1 || userAgent.indexOf("Trident/") > -1;
+        }
+        if (isIE()) alert("ePub does not support Internet Explorer. Please use Chrome or Firefox.");
+    </script>
+
+    <script>
+        if ('serviceWorker' in navigator) window.addEventListener('load', () => {
+            navigator.serviceWorker.register('sw.js').then(reg => {
+                reg.onupdatefound = () => {
+                    const installingWorker = reg.installing;
+                    installingWorker.onstatechange = () => {
+                        if (installingWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                            location.reload();
+                        }
+                    };
+                };
+            })
+        });
+        try {
+            window.caches.keys().then(keys => console.log(/*"caches: " + keys.join(", ")*/)).catch(err => console.log("error checking cache version"));
+        } catch (err) { }
+    </script>
+
+    <script src="polyfills/babel-polyfill.min.js"></script>
+    <script src="polyfills/fetch.js"></script>
+    <script src="polyfills/pep.min.js"></script>
+    <script src="libs/sanitize-html.min.js"></script>
+    <script src="libs/jszip.min.js"></script>
+    <script src="libs/epub.js"></script>
+
+    <script src="script.js"></script>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66226417-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-66226417-1');
+    </script>
+
+</body>
+
+</html>
